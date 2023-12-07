@@ -1,0 +1,7 @@
+<!-- your_app/templates/your_app/teacher_form.html -->
+<form method="post" action="{% url 'teacher' %}">
+    {% csrf_token %}
+    {{ serializer.as_form }}
+    <input type="submit" value="Submit">
+  </form>
+  
